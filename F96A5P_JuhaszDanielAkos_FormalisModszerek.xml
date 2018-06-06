@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
 
-broadcast chan KuthozBeall;
-broadcast chan KuttolKihajt;
-broadcast chan TankolasMegkezdodik;
-broadcast chan TankolasVege;
-broadcast chan KereknyomasAllitasMegkezdodik;
-broadcast chan KereknyomasAllitasVege;
+ chan KuthozBeall;
+ chan KuttolKihajt;
+ chan TankolasMegkezdodik;
+ chan TankolasVege;
+ chan KereknyomasAllitasMegkezdodik;
+ chan KereknyomasAllitasVege;
 
 int szabadKutSzam = 5;</declaration><template><name x="5" y="5">Vasarlo</name><declaration>// Place local declarations here.
 int tank = 0;
@@ -26,14 +26,28 @@ v1 = Vasarlo();
 v2 = Vasarlo();
 v3 = Vasarlo();
 v4 = Vasarlo();
+v5 = Vasarlo();
+v6 = Vasarlo();
+v7 = Vasarlo();
+v8 = Vasarlo();
+
 
 a1 = Auto();
 a2 = Auto();
 a3 = Auto();
 a4 = Auto();
+a5 = Auto();
+a6 = Auto();
+a7 = Auto();
+a8 = Auto();
 
 t1 = ToltoAllomas();
 t2 = ToltoAllomas();
+t3 = ToltoAllomas();
+t4 = ToltoAllomas();
+t5 = ToltoAllomas();
 
 // List one or more processes to be composed into a system.
-system Vasarlo, Auto, ToltoAllomas;</system></nta>
+//system Vasarlo, Auto, ToltoAllomas;
+
+system v1, v2, v3, v4, v5, v6, v7, v8, a1, a2, a3, a4, a5, a6, a7, a8, t1, t2;</system></nta>
